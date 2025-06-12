@@ -12,8 +12,10 @@ body {
 /* MAKE HEADER STICKY */
 
 .make-sticky {
-  position: sticky;
-  top: 0px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 140px;
 }
 
 /* HEADING STYLING */
@@ -67,8 +69,8 @@ h1 {
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0.1em;
+    margin-top: 50px;
+    margin-bottom: 0px;
     margin-left: 25px;
     margin-right: 25px;
     font-weight: bold;
@@ -78,8 +80,8 @@ h2 {
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    margin-top: 0em;
-    margin-bottom: 0.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 25px;
     margin-right: 25px;
     text-align: left;
@@ -91,16 +93,13 @@ p {
 display: flex;
 }
 
-.about-left-container {
-
-}
-
 .about-right-container {
     margin-right: 1.5em
 }
 
 .portfolio-left-container {
     max-width: 50%;
+    width: 50%;
     margin-left: 25px;
     margin-right: 12px;
     margin-top: 10px;
@@ -108,6 +107,7 @@ display: flex;
 
 .portfolio-right-container {
     max-width: 50%;
+    width: 50%;
     margin-right: 25px;
     margin-left: 12px;
     margin-top: 10px;
@@ -116,10 +116,30 @@ display: flex;
 /* Cause the portfolio image to be restricted to the size of the div it is in and ensure text underneath aligns */
 
 .contain-image img {
-    height: 100%; width: 100%; 
+    height: 100%;
+    width: 100%; 
 }
 
 .projects-text {
     margin-left: 0px;
 }
 
+/* Contact form styling */
+
+.contact-form {
+    border: 1px solid #000000;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* HORIZONTAL RULE BETWEEN SECTIONS */
+
+hr.section-divider {
+    border-top: 1px dashed red;
+    margin-top: 80px;
+}

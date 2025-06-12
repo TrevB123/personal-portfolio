@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/assets/main.css">
     </head>
     <body>
-         <!-- Make the main heading sticky -->
+         <!-- Make the main heading fixed -->
         <header class="make-sticky">
                     <!-- Main heading -->
                     <div class="heading">
@@ -21,16 +21,20 @@
                     </div>
                     <!-- main-menu -->
                     <div class="menu">
-                        <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#about-anchor">About</a>
+                        <a href="#projects-anchor">Projects</a>
+                        <a href="#contact-anchor">Contact</a>
                     </div>
                 </div>
         </header>
         <main>
+            <!-- insert code that activates the anchor for about me -->
+            <div style="position:relative;">
+                <div id="about-anchor" style="position:absolute; top:-180px;"></div>
+            </div>
             <!-- first 2-col section including details about me and photo - built using flexbox -->
-            <section id="about">
-                <h2>About</h2>
+            <section id="anchor">
+                <h2>About Me</h2>
                     <div class="two-col-layout">
                         <div class="about-left-container">
                             <p>A creative and passionate, results motivated, coder with experience in HTML, CSS and content management systems as well as marketing, design and communications. I have an eye for detail but also enjoy looking at the bigger picture. Comfortable whether working on front or back end, I thrive on delivering outstanding coding solutions as well as using data and design to inform and improve user experiences and increase return on investment.</p>  
@@ -40,27 +44,46 @@
                         </div>
                     </div>
             </section>
-            <!-- second 2-col section with images of two porfolio pieces -->
+            <!-- insert a red rule between sections-->
+            <hr class="section-divider">
+            <!-- insert code that activates the anchor for projects -->
+            <div style="position:relative;">
+                <div id="projects-anchor" style="position:absolute; top:-140px;"></div>
+            </div>
+            <!-- second 2-col section with images of two porfolio pieces and short descriptions -->
             <section id="projects">
-                <h2>Projects</h2>
+                <h2>My Projects</h2>
                     <div class="two-col-layout">
                         <div class="portfolio-left-container">
                             <div class="contain-image">
-                                <img src="/assets/images/homepage-visual.jpg">
-                                <p class="projects-text">I created a new website for a colaborative design school using Figma to visualise annd then implementing the design using a combinatnion of tools and extensive CSS and HTML customisation. I was als able to train the staff in the business to make basic updates and alter code to adjust elements as they required for difference scenarios.</p>  
+                                <img src="/assets/images/homepage-visual.jpg"> 
+                            </div>
+                            <div>
+                                <p class="projects-text">I created a new website for a colaborative design school using Figma to visualise annd then implementing the design using a combinatnion of tools and extensive CSS and HTML customisation. I was als able to train the staff in the business to make basic updates and alter code to adjust elements as they required for difference scenarios.</p> 
                             </div>
                         </div>
                         <div class="portfolio-right-container">
                             <div class="contain-image">
-                                <img src="/assets/images/man-working.jpg">
-                                <p class="projects-text">Working from home, I have built a number of sites for difference clients including marketing and store fronts as well as landing pages and emails. In all cases, the goal was to ensure clean code in the back end and a clean, simple, functional user interface and user experience. All of these businesses saw an increase in revenue.</p>  
+                                <img src="/assets/images/man-working.jpg"> 
+                            </div>
+                            <div>
+                                <p class="projects-text">Working from home, I have built a number of sites for difference clients including marketing and store fronts as well as landing pages and emails. In all cases, the goal was to ensure clean code in the back end and a clean, simple, functional user interface and user experience. All of these businesses saw an increase in revenue.</p> 
                             </div>
                         </div>
                     </div>
             </section>
-
+            <!-- insert a red rule between sections -->
+            <hr class="section-divider">
+            <!-- insert code that activates the anchor for projects -->
+            <div style="position:relative;">
+                <div id="contact-anchor" style="position:absolute; top:-140px;"></div>
+            </div>
+            <!-- third 2-col section with contact details and form -->
             <section id="contact">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
+                    <div class="contact-form">
+                        This is the contact form
+                    </div>
             </section>
         </main>
         <footer>
