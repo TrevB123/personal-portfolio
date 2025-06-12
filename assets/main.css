@@ -9,6 +9,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* MAKE HEADER STICKY */
+
+.make-sticky {
+  position: sticky;
+  top: 0px;
+}
+
+/* HEADING STYLING */
+
+.heading {
+    padding: 10px;
+    background-color: white;
+}
+
 /* MENU STYLING */
 
 .menu {
@@ -77,11 +91,35 @@ p {
 display: flex;
 }
 
-.left-container {
+.about-left-container {
 
 }
 
-.right-container {
+.about-right-container {
     margin-right: 1.5em
+}
+
+.portfolio-left-container {
+    max-width: 50%;
+    margin-left: 25px;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+
+.portfolio-right-container {
+    max-width: 50%;
+    margin-right: 25px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+/* Cause the portfolio image to be restricted to the size of the div it is in and ensure text underneath aligns */
+
+.contain-image img {
+    height: 100%; width: 100%; 
+}
+
+.projects-text {
+    margin-left: 0px;
 }
 
