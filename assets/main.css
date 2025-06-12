@@ -1,7 +1,23 @@
-/* DOCUMENT SYLING */
+/* Global styles */
 
-* {
-    color: #686868
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(185, 105, 255);
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
 
 body {
@@ -9,7 +25,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* MAKE HEADER STICKY */
+/* Make header sticky */
 
 .make-sticky {
     position: sticky;
@@ -18,14 +34,15 @@ body {
     height: 140px;
 }
 
-/* HEADING STYLING */
+/* Heading styling */
 
 .heading {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: white;
 }
 
-/* MENU STYLING */
+/* Menu styling */
 
 .menu {
     overflow: hidden;
@@ -53,7 +70,7 @@ body {
     color: white;
 }
 
-/* DOCUMENT TEXT SYLING */
+/* Document text styling */
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -79,7 +96,7 @@ h2 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 25px;
@@ -87,7 +104,7 @@ p {
     text-align: left;
 }
 
-/* MAIN SECTIONS SYLING */
+/* Two column layouts */
 
 .two-col-layout {
 display: flex;
@@ -124,11 +141,30 @@ display: flex;
     margin-left: 0px;
 }
 
+/* Horizontal rule between main sections */
+
+hr.section-divider {
+    border-top: 1px dashed red;
+    margin-top: 80px;
+}
+
+/* pixel border and centering for the telephone number and email boxes */
+.pixel-border {
+    border: 1px Solid Black;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.tel-and-email {
+    text-align: center;
+    font-size: 30px
+}
+
 /* Contact form styling */
 
 .contact-form {
     border: 1px solid #000000;
-    width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 25px;
@@ -137,9 +173,39 @@ display: flex;
     text-align: center;
 }
 
-/* HORIZONTAL RULE BETWEEN SECTIONS */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-hr.section-divider {
-    border-top: 1px dashed red;
-    margin-top: 80px;
+/* Styles for the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Change the colour of the submit button on hover */
+input[type=submit]:hover {
+  background-color: #7fd483;
+}
+
+/* Background color, padding and centring */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
