@@ -107,26 +107,42 @@ p {
 /* Two column layouts and body css */
 
 .two-col-layout {
-display: flex;
+    display: inline-block;
 }
+
+/* Styling for the About section using inline-block only */
+
+.about-left-container {
+    display: inline-block;
+    width: 30%;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 20px;
+} 
 
 .about-right-container {
-    margin-right: 1.5em
+    display: inline-block;
+    width: 70%;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
-.portfolio-left-container {
-    max-width: 50%;
-    width: 50%;
+/* Styling for the Protfolio section using inline-block only */
+
+ .portfolio-left-container {
+    display: inline-block;
+    width: 44%;
     margin-left: 25px;
-    margin-right: 12px;
-    margin-top: 10px;
-}
+    margin-right: 25px;
+    margin-top: 20px; 
+} 
 
 .portfolio-right-container {
-    max-width: 50%;
-    width: 50%;
+    display: inline-block;
+    width: 44%;
     margin-right: 25px;
-    margin-left: 12px;
+    margin-left: 25px;
     margin-top: 10px;
 }
 
@@ -169,7 +185,7 @@ hr.section-divider {
     margin-bottom: 15px;
     margin-left: 25px;
     margin-right: 25px;
-    padding: 40px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -202,10 +218,10 @@ input[type=submit]:hover {
 
 /* Background color, padding and centring */
 .container {
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #f2f2f2;
-  padding: 20px;
-  width: 400px;
+  padding: 10px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -217,7 +233,10 @@ input[type=submit]:hover {
     display: block;
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 0px;
     color: #ffffff;
     font-size: 12px;
 }
